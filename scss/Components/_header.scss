@@ -1,0 +1,40 @@
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #cc0000;
+    padding: 30px 20px;
+    z-index: 1;
+
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title{
+            color: black;
+        }
+
+        &-navbar{
+            display: flex;
+
+            & a{
+                margin: 0 15px;
+                color: white;
+                font-weight: 700;
+            }
+        }
+
+        &_menuhamb{
+            display: none;
+        }
+        
+        &-tile{
+            color: white;
+        }
+    }
+}
+
+
+

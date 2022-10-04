@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+p {
+    line-height: 1.5;
+}
+body {
+    /* height: 2000px; */
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+.whatsapp{
+    /* position fixed toma como referencia el viewport, o TODO lo visible de la pantalla */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+ }

@@ -1,0 +1,38 @@
+@media (max-width: 1240px) {
+    .ultima__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+    .card__header{
+        /* display: flexbox; */
+        justify-items: center;
+    }
+    .resumen2021__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+ }
+ @media (max-width: 950px) {
+ .resumen2021__content{
+    grid-template-columns: repeat(1, 1fr);
+ }
+}
+ @media (max-width: 900px) {
+    .header__content-navbar{
+        display: none;
+    }
+    .header__content_menuhamb{
+        display: flex;
+        width: 50px;
+        margin-right: 50px;
+    }
+ }
+ @media (max-width: 720px) {
+    .ultima__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer__content{
+        display: none;
+    }
+    
+ }

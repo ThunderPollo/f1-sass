@@ -1,0 +1,18 @@
+.footer{
+    background-color: #CC0000;
+    width: auto;
+    height: 100px;
+    font-weight: 700;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+    & a{
+        color: white;
+    }
+}

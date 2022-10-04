@@ -1,0 +1,58 @@
+.resumen2021__banner{
+    background-image: url("/Assets/bufinal.png");
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    &_title{
+        color: black;
+        background-color: azure;
+        max-width: 400px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+.resumen2021{
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 100%;
+        gap: 20px;
+        padding-top: 0px;   
+        margin: 40px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #011e3d;
+        align-items: center;
+        
+        & h2{
+            text-align: center;
+            padding-bottom: 20px;
+            color: white;
+            font-size: x-large;
+        }
+        & p{
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        &__text{
+            color: white;
+            padding-top: 10px;
+        }
+        &__video{
+            background-color: black;
+            margin: 100px;
+        }
+    }
+}
+
