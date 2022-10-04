@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>F1 Chile</title/>
+    <link rel="stylesheet" href="../cssSalida/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Lato:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+           
+       <h3><a href="../index.html" class="header__content-tile">F1 Chile</a>
+       </h3>
+           <!-- Agregamos el menú navegable y sus enlaces -->
+           <nav>
+                <img class="header__content_menuhamb" src="../Assets/Menu hamburgesa.png" alt="Menú"/>
+               <ul class="header__content-navbar">
+                   <li> <a href="../index.html">Inicio</a></li>
+                   <li> <a href="./calendario 2022.html">Calendario 2022</a></li>
+                   <li> <a href="./temporada2021.html">Temporada 2021</a></li>
+                   <li> <a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+                   <li> <a href="./contacto.html">Contacto</a></li>
+                   <li> <a href="https://f1tv.formula1.com" target="_blank">Ir a F1tv.com</a></li>
+               </ul>    
+           </nav>        
+       </div>
+           <!-- Cerramos logo y menú -->
+       </header>
+    <main>
+        <!-- Abrimos la sección para el formulario -->
+        <section>
+            <h1>Formulario de contacto</h1>
+            <form action="send.php" method="get" enctype="multipart/form-data">
+                <!-- Campos del formulario -->
+                <label for="nombre"></label> Nombre
+                <input type="text" placeholder="Nombre"/ id="nombre">
+                <input type="email" placeholder="Correo"/>
+                <input type="subject" placeholder="Asunto" />
+                <textarea cols="50" rows="10" placeholder="Escribe tu mensaje"></textarea>
+
+                <!-- Botón de enviar -->
+                <button type="submit">Enviar formulario de contacto</button>
+                <button type="reset">Limpiar el formulario</button>
+            </form>
+        </section>
+
+        <!-- Sección para el iframe con el mapa de google -->
+        <section>
+            <h2>Mapa de ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.396183928627!2d-70.57805854870806!3d-33.46503460555357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfcd6beada6d%3A0x74566556c9648a1b!2zTGEgQWR1YW5hIDk4NSwgw5F1w7FvYSwgUmVnacOzbiBNZXRyb3BvbGl0YW5h!5e0!3m2!1ses-419!2scl!4v1659915344340!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <div>
+                <ul class="footer__content">
+                    <li class="footer__content_index"> <a href="index.html">Inicio</a></li>
+                    <li class="footer__content_rrss"> <a href="#">Redes sociales</a></li>
+                    <li class="footer__content_wp"> <a href="#">whatsapp</a></li>
+                    <li class="footer__content_sobrenosotros"> <a href="./Pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="footer__content_contacto"> <a href="./Pages/contacto.html">Contacto</a></li>
+                    <li class="footer__content_f1tv"> <a href="https://f1tv.formula1.com" target="_blank">Ir a F1tv.com</a></li>
+                </ul>
+            </div>    
+        </div>
+    </footer>
+    
+</body>
+</html>

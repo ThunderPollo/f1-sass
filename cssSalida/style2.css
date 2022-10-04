@@ -1,0 +1,299 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main {
+  margin-bottom: 20px; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+p {
+  line-height: 1.5; }
+
+body {
+  /* height: 2000px; */
+  font-family: 'BhuTuka Expanded One', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: white; }
+
+.whatsapp {
+  /* position fixed toma como referencia el viewport, o TODO lo visible de la pantalla */
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #cc0000;
+  padding: 30px 20px;
+  z-index: 1; }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__content-title {
+      color: black; }
+    .header__content-navbar {
+      display: flex; }
+      .header__content-navbar a {
+        margin: 0 15px;
+        color: white;
+        font-weight: 700; }
+    .header__content_menuhamb {
+      display: none; }
+    .header__content-tile {
+      color: white; }
+
+.footer {
+  background-color: #CC0000;
+  width: auto;
+  height: 100px;
+  font-weight: 700; }
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px; }
+  .footer a {
+    color: white; }
+
+@media (max-width: 1240px) {
+  .ultima__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px; }
+  .card__header {
+    /* display: flexbox; */
+    justify-items: center; }
+  .resumen2021__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px; } }
+
+@media (max-width: 950px) {
+  .resumen2021__content {
+    grid-template-columns: repeat(1, 1fr); } }
+
+@media (max-width: 900px) {
+  .header__content-navbar {
+    display: none; }
+  .header__content_menuhamb {
+    display: flex;
+    width: 50px;
+    margin-right: 50px; } }
+
+@media (max-width: 720px) {
+  .ultima__content {
+    grid-template-columns: repeat(1, 1fr); }
+  .footer__content {
+    display: none; } }
+
+.card {
+  background-color: #011e3d;
+  padding: 20px;
+  border-radius: 10px; }
+  .card__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white; }
+  .card__description {
+    margin-bottom: 40px;
+    color: white; }
+  .card__link {
+    background-color: #ffcc00;
+    display: inline-block;
+    width: 50%;
+    padding: 15px 0;
+    text-align: center;
+    color: #011e3d;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-right: 25%; }
+  .card__header {
+    position: relative; }
+    .card__header__img {
+      width: 100%;
+      border-style: none;
+      border-radius: 10px;
+      margin-bottom: 20px; }
+
+.ultima {
+  margin-top: 60px;
+  padding: 0 20px; }
+  .ultima__title {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-image: url("/Assets/bucarrera.png");
+    height: 80px;
+    background-size: cover;
+    background-position: left;
+    max-width: auto;
+    margin: 40px;
+    padding-top: 20px; }
+  .ultima__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: auto;
+    margin: 40px; }
+
+.background__image {
+  background-image: url(/assets/2.png);
+  padding: 120px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  .background__image-text {
+    color: black;
+    background-color: azure;
+    max-width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px; }
+
+.resumen2021__banner {
+  background-image: url("/Assets/bufinal.png");
+  padding: 120px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  .resumen2021__banner_title {
+    color: black;
+    background-color: azure;
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px; }
+
+.resumen2021__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 100%;
+  gap: 20px;
+  padding-top: 0px;
+  margin: 40px; }
+
+.resumen2021__card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #011e3d;
+  align-items: center; }
+  .resumen2021__card h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-size: x-large; }
+  .resumen2021__card p {
+    font-size: 20px;
+    padding-top: 10px; }
+  .resumen2021__card__text {
+    color: white;
+    padding-top: 10px; }
+  .resumen2021__card__video {
+    background-color: black;
+    margin: 100px; }
+
+.gran-premio {
+  margin: 20px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px; }
+  .gran-premio__title {
+    border-bottom: 3px solid black;
+    font-size: 30ppx;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 40px; }
+    .gran-premio__title-arriba {
+      float: right;
+      font-size: large; }
+    .gran-premio__title--date {
+      font-style: italic;
+      color: #CC0000; }
+  .gran-premio__circuit--name {
+    font-size: 33px;
+    line-height: 37px;
+    margin-bottom: -4px;
+    margin-top: 10px;
+    text-align: left;
+    width: 33%;
+    color: #1f3f6e; }
+  .gran-premio__circuit--item {
+    text-align: left; }
+  .gran-premio__circuit--data {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: -4px;
+    margin-top: 10px;
+    text-align: left;
+    width: 33%;
+    color: #1f3f6e; }
+  .gran-premio__event-duration {
+    color: #c00;
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    text-transform: uppercase; }
+  .gran-premio__img--circuit {
+    max-height: 150px;
+    margin: 5px 350px; }
+
+.transform__img {
+  transition: all 0.8s; }
+
+.transform__img :hover {
+  /* transform: translateX(100px); */
+  transform: scale(1.8); }
+
+.animacion-carrera {
+  /* left: 20px;
+    top: 20px; */
+  background-image: url("/Assets/animacion.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: auto;
+  height: 200px;
+  animation-name: carrera;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s; }
+
+@keyframes carrera {
+  0% { }
+  100% {
+    background-position: right; } }
+
+/* Desde acá hacia abajo comenzamos a declarar los media queries */
+/* Mobile last: breakpoint de mayor a menor */
